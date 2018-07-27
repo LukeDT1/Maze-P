@@ -799,7 +799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce1daa55c8b16441bf4da50112098de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 3
+  turnSpeed: 4
 --- !u!23 &70506155
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1004,7 +1004,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 8.8
   m_Range: 17.7
-  m_SpotAngle: 41.42
+  m_SpotAngle: 75
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -2974,6 +2974,7 @@ GameObject:
   - component: {fileID: 451239827}
   - component: {fileID: 451239826}
   - component: {fileID: 451239825}
+  - component: {fileID: 451239829}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -3023,7 +3024,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &451239827
 MeshFilter:
@@ -3045,6 +3046,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451239829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451239824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312db8ea0afaa4cf98c467f1210b1e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1312327227}
 --- !u!1 &466338079
 GameObject:
   m_ObjectHideFlags: 0
@@ -8399,7 +8412,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 85
   orthographic: 0
   orthographic size: 5
   m_Depth: -1

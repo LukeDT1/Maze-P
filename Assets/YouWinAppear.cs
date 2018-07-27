@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class YouWinAppear : MonoBehaviour {
 	public GameObject canvas;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,7 +16,7 @@ public class YouWinAppear : MonoBehaviour {
 		if(other.gameObject.name == "Player")
 		{
 			Destroy (gameObject);
-			gameObject.SetActive(canvas);
+			canvas.SetActive(true);
 		}
 	}
 }
